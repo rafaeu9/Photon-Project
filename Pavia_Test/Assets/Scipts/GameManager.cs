@@ -13,8 +13,6 @@ using Photon.Realtime;
     public class GameManager : MonoBehaviourPunCallbacks
     {
 
-        [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
-        public static GameObject LocalPlayerInstance;
 
         #region Photon Callbacks
 
@@ -48,6 +46,7 @@ using Photon.Realtime;
 
     void Start()
     {
+
         if (playerPrefab == null)
         {
             Debug.LogError("<Color=Red><a>Missing</a></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'", this);
@@ -63,14 +62,14 @@ using Photon.Realtime;
 
     void LoadArena()
         {
-            if (!PhotonNetwork.IsMasterClient)
-            {
-                Debug.LogError("PhotonNetwork : Trying to Load a level but we are not the master Client");
-            }
+            //if (!PhotonNetwork.IsMasterClient)
+            //{
+            //    Debug.LogError("PhotonNetwork : Trying to Load a level but we are not the master Client");
+            //}
 
-            Debug.LogFormat("PhotonNetwork : Loading Level ");
+            //Debug.LogFormat("PhotonNetwork : Loading Level ");
             
-            PhotonNetwork.LoadLevel("Playground");
+            //PhotonNetwork.LoadLevel("Playground");
         }
 
 

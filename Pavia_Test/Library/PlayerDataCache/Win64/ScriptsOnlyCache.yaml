@@ -45,8 +45,6 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -138,37 +136,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3832}
+      Script: {instanceID: 3526}
     - Class: 114
-      Script: {instanceID: 4090}
+      Script: {instanceID: 3794}
     - Class: 114
-      Script: {instanceID: 4326}
+      Script: {instanceID: 3836}
     - Class: 114
-      Script: {instanceID: 4332}
+      Script: {instanceID: 4094}
     - Class: 114
-      Script: {instanceID: 4484}
+      Script: {instanceID: 4330}
     - Class: 114
-      Script: {instanceID: 4490}
+      Script: {instanceID: 4336}
     - Class: 114
-      Script: {instanceID: 4722}
+      Script: {instanceID: 4488}
     - Class: 114
-      Script: {instanceID: 4746}
+      Script: {instanceID: 4494}
     - Class: 114
-      Script: {instanceID: 4784}
+      Script: {instanceID: 4726}
     - Class: 114
-      Script: {instanceID: 5292}
+      Script: {instanceID: 4750}
     - Class: 114
-      Script: {instanceID: 5482}
+      Script: {instanceID: 4788}
     - Class: 114
-      Script: {instanceID: 5886}
+      Script: {instanceID: 5176}
     - Class: 114
-      Script: {instanceID: 20646}
+      Script: {instanceID: 5298}
     - Class: 114
-      Script: {instanceID: 21888}
+      Script: {instanceID: 5488}
     - Class: 114
-      Script: {instanceID: 23020}
+      Script: {instanceID: 5644}
     - Class: 114
-      Script: {instanceID: 42714}
+      Script: {instanceID: 5894}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -273,27 +271,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3694}
+      Script: {instanceID: 3526}
     - Class: 114
-      Script: {instanceID: 3832}
+      Script: {instanceID: 3696}
     - Class: 114
-      Script: {instanceID: 4042}
+      Script: {instanceID: 3836}
     - Class: 114
-      Script: {instanceID: 4300}
+      Script: {instanceID: 4046}
     - Class: 114
-      Script: {instanceID: 4326}
+      Script: {instanceID: 4304}
     - Class: 114
-      Script: {instanceID: 4332}
+      Script: {instanceID: 4330}
     - Class: 114
-      Script: {instanceID: 4746}
+      Script: {instanceID: 4336}
     - Class: 114
-      Script: {instanceID: 5292}
+      Script: {instanceID: 4750}
     - Class: 114
-      Script: {instanceID: 5538}
+      Script: {instanceID: 5298}
     - Class: 114
-      Script: {instanceID: 23020}
+      Script: {instanceID: 5544}
     - Class: 114
-      Script: {instanceID: 42714}
+      Script: {instanceID: 5644}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1167,6 +1165,12 @@ ScriptsOnlyBuild:
     className: TouchSimulation
   - hash:
       serializedVersion: 2
+      Hash: b4a1a9d5aa5c8ea16456ba8798e55ed5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocalPlayerTraker
+  - hash:
+      serializedVersion: 2
       Hash: 287a4aa7392bcfb309b4d7b4dc89eb3c
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -1255,6 +1259,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: ConnectToRegionUIForm
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.MyCompany.MyGame
+    className: PlayerNameInputField
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -1875,6 +1885,12 @@ ScriptsOnlyBuild:
     className: EventSystemSpawner
   - hash:
       serializedVersion: 2
+      Hash: 0982807d60fb3884d51d4baa9fdc156c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Launcher
+  - hash:
+      serializedVersion: 2
       Hash: 426e5bd616852254b77531cd1a8e29b6
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.OnScreen
@@ -2025,6 +2041,12 @@ ScriptsOnlyBuild:
     className: ThirdPersonUserControl
   - hash:
       serializedVersion: 2
+      Hash: d1f07c9e64b7817e6271f80bb03de25f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Chat.UtilityScripts
@@ -2143,32 +2165,8 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
-  - hash:
-      serializedVersion: 2
-      Hash: 0982807d60fb3884d51d4baa9fdc156c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Launcher
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Com.MyCompany.MyGame
-    className: PlayerNameInputField
-  - hash:
-      serializedVersion: 2
-      Hash: d1f07c9e64b7817e6271f80bb03de25f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LocalPlayerTraker
   platform: 19
   scenePathNames:
   - Assets/Launcher/Launcher.unity
   - Assets/ThirdPersonController/Scenes/Playground.unity
-  playerPath: C:/GitHub/Pavia_Test/Builds/Build1/Pavia_Test.exe
+  playerPath: C:/GitHub/pavia_test/Pavia_Test/Builds/Build1/Pavia_Test.exe

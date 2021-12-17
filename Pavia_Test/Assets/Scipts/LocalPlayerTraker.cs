@@ -6,26 +6,21 @@ using Photon.Pun;
 
 using System.Collections;
 
-using StarterAssets;
+using Cinemachine;
 
 public class LocalPlayerTraker : MonoBehaviour
 {
-    
-    
+
+    public GameObject Target;
 
     // Start is called before the first frame update
     void Awake()
     {
         // #Important
         // used in GameManager.cs: we keep track of the localPlayer instance to prevent instantiation when levels are synchronized
-        if (GetComponent<PhotonView>().IsMine)
+        if (gameObject.GetComponent<PhotonView>().IsMine)
         {
-            GameObject Target = GameObject.Find("PlayerCameraRoot");
-            Target.name = "PlayerCameraRoot{0}";
-
-            Target.transform.SetParent(gameObject.transform);
-
-            GetComponent<ThirdPersonController>().CinemachineCameraTarget = Target;
+            GameObject.Find("PlayerFollowCamera").GetComponent<CinemachineVirtualCamera>().Follow = Target.transform;
         }
 
         // #Critical
