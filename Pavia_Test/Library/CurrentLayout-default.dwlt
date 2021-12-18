@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1854
     height: 1037
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1854
     height: 1037
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -338,7 +338,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -458,9 +458,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: fa450000
       m_LastClickedID: 0
-      m_ExpandedIDs: aaedffff5eefffff82efffffc6f1ffffd0f1ffff64f8ffff0cfbffffdc440000
+      m_ExpandedIDs: f899fffffaa0ffff5ea7ffff3aa8ffff5eaeffff02afffff26afffffb0b5ffffb4b5ffffd4b6fffff8b6ffff82bdffff86bdfffff2beffff16bfffffa4c5ffffacc5ffffe8d4ffff28dbffff0ee2ffffd8e7ffff90eeffff0af4ffff5efaffff46fbfffff24a0000da520000f4540000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -520,9 +520,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.2382892, y: -1.37613, z: 6.1481647}
+    m_Target: {x: 325.955, y: 213.47443, z: 312.86456}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 325.955, y: 213.47443, z: 312.86456}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -569,13 +569,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.14788906, y: 0.07025221, z: -0.010539939, w: -0.98646677}
+    m_Target: {x: -0.054280028, y: -0.012884124, z: 0.00069199945, w: -0.9984608}
     speed: 2
-    m_Value: {x: -0.046765987, y: -0.033858843, z: 0.0015851242, w: -0.99833065}
+    m_Value: {x: -0.054279033, y: -0.012883888, z: 0.00069198676, w: -0.9984425}
   m_Size:
-    m_Target: 5.666026
+    m_Target: 400
     speed: 2
-    m_Value: 3.0073948
+    m_Value: 400
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -638,22 +638,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scipts
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scipts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\GitHub\pavia_test\Pavia_Test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 90450000
-    m_LastClickedID: 17808
-    m_ExpandedIDs: 00000000724500007445000076450000784500007a4500007c4500007e450000804500008845000000ca9a3b
+    m_SelectedIDs: 72450000
+    m_LastClickedID: 17778
+    m_ExpandedIDs: 00000000724500007445000076450000784500007a4500007c4500007e4500008045000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

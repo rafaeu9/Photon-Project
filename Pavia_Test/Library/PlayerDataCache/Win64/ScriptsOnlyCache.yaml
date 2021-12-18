@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - GameManager
     - Launcher
     - LocalPlayerTraker
+    - MenuUI
     - MobileDisableAutoSwitchControls
     - PlayerNameInputField
     - PlayerUIRoate
@@ -327,6 +328,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5572}
     - Class: 114
       Script: {instanceID: 5672}
+    - Class: 114
+      Script: {instanceID: 20772}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2206,6 +2209,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: 04cab81eeeaae6b52511ca29fc924237
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuUI
   platform: 19
   scenePathNames:
   - Assets/Launcher/Launcher.unity
