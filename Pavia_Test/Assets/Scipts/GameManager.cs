@@ -4,13 +4,13 @@ using System.Collections;
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 using Photon.Pun;
 using Photon.Realtime;
+using TMPro;
 
-
-    public class GameManager : MonoBehaviourPunCallbacks
+public class GameManager : MonoBehaviourPunCallbacks
     {
 
 
@@ -57,6 +57,7 @@ using Photon.Realtime;
             // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
 
             PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f, 0f, 0f), Quaternion.identity, 0);
+
         }
     }
 
@@ -82,13 +83,14 @@ using Photon.Realtime;
         {
             Debug.LogFormat("OnPlayerEnteredRoom() {0}", other.NickName); // not seen if you're the player connecting
 
+            
 
-            if (PhotonNetwork.IsMasterClient)
+        if (PhotonNetwork.IsMasterClient)
             {
                 Debug.LogFormat("OnPlayerEnteredRoom IsMasterClient {0}", PhotonNetwork.IsMasterClient); // called before OnPlayerLeftRoom
 
-
-                LoadArena();
+            
+            //LoadArena();
             }
         }
 
@@ -103,7 +105,7 @@ using Photon.Realtime;
                 Debug.LogFormat("OnPlayerLeftRoom IsMasterClient {0}", PhotonNetwork.IsMasterClient); // called before OnPlayerLeftRoom
 
 
-                LoadArena();
+                //LoadArena();
             }
         }
 

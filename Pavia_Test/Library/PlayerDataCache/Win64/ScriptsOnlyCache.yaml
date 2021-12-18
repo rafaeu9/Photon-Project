@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - Launcher
     - LocalPlayerTraker
     - MobileDisableAutoSwitchControls
+    - PlayerUIRoate
     - StarterAssets.StarterAssetsInputs
     - StarterAssets.ThirdPersonController
     - StarterAssets.UICanvasControllerInput
@@ -29,6 +30,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -45,13 +48,19 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.Editor.dll:
+    - TMPro.EditorUtilities.TMP_EditorPanelUI
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -86,6 +95,8 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
@@ -126,7 +137,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1826}
     - Class: 114
+      Script: {instanceID: 1884}
+    - Class: 114
       Script: {instanceID: 2166}
+    - Class: 114
+      Script: {instanceID: 2274}
     - Class: 114
       Script: {instanceID: 2400}
     - Class: 114
@@ -135,6 +150,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2706}
     - Class: 114
       Script: {instanceID: 2890}
+    - Class: 114
+      Script: {instanceID: 2944}
     - Class: 114
       Script: {instanceID: 3160}
     - Class: 114
@@ -166,15 +183,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4788}
     - Class: 114
+      Script: {instanceID: 4926}
+    - Class: 114
       Script: {instanceID: 5176}
     - Class: 114
       Script: {instanceID: 5298}
+    - Class: 114
+      Script: {instanceID: 5300}
     - Class: 114
       Script: {instanceID: 5488}
     - Class: 114
       Script: {instanceID: 5644}
     - Class: 114
       Script: {instanceID: 5894}
+    - Class: 114
+      Script: {instanceID: 29530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -255,6 +278,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1536}
     - Class: 114
+      Script: {instanceID: 1884}
+    - Class: 114
       Script: {instanceID: 1976}
     - Class: 114
       Script: {instanceID: 2142}
@@ -268,6 +293,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2808}
     - Class: 114
       Script: {instanceID: 2890}
+    - Class: 114
+      Script: {instanceID: 2944}
     - Class: 114
       Script: {instanceID: 2974}
     - Class: 114
@@ -300,6 +327,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5544}
     - Class: 114
       Script: {instanceID: 5644}
+    - Class: 114
+      Script: {instanceID: 29530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1173,7 +1202,7 @@ ScriptsOnlyBuild:
     className: TouchSimulation
   - hash:
       serializedVersion: 2
-      Hash: b4a1a9d5aa5c8ea16456ba8798e55ed5
+      Hash: ab7ae5233097242dfe0b99b1ac289048
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LocalPlayerTraker
@@ -2173,6 +2202,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerUIRoate
   platform: 19
   scenePathNames:
   - Assets/Launcher/Launcher.unity
