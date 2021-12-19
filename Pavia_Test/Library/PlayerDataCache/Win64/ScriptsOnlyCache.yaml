@@ -2,7 +2,9 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BasicRigidBodyPush
+    - CubesLogic
     - GameManager
+    - GrabItems
     - Launcher
     - LocalPlayerTraker
     - MenuUI
@@ -32,7 +34,9 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
+    - Photon.Pun.PhotonRigidbodyViewEditor
+    - Photon.Pun.PhotonTransformViewEditor
+    - Photon.Pun.PhotonViewInspector
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -188,15 +192,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5204}
     - Class: 114
-      Script: {instanceID: 5326}
-    - Class: 114
       Script: {instanceID: 5328}
     - Class: 114
-      Script: {instanceID: 5516}
+      Script: {instanceID: 5330}
     - Class: 114
-      Script: {instanceID: 5672}
+      Script: {instanceID: 5518}
     - Class: 114
-      Script: {instanceID: 5922}
+      Script: {instanceID: 5674}
+    - Class: 114
+      Script: {instanceID: 5782}
+    - Class: 114
+      Script: {instanceID: 5926}
+    - Class: 114
+      Script: {instanceID: 19154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -245,6 +253,8 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
@@ -323,13 +333,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4778}
     - Class: 114
-      Script: {instanceID: 5326}
+      Script: {instanceID: 4816}
     - Class: 114
-      Script: {instanceID: 5572}
+      Script: {instanceID: 5220}
     - Class: 114
-      Script: {instanceID: 5672}
+      Script: {instanceID: 5328}
     - Class: 114
-      Script: {instanceID: 20772}
+      Script: {instanceID: 5574}
+    - Class: 114
+      Script: {instanceID: 5674}
+    - Class: 114
+      Script: {instanceID: 5782}
+    - Class: 114
+      Script: {instanceID: 19154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1785,7 +1801,7 @@ ScriptsOnlyBuild:
     className: PlayerListView
   - hash:
       serializedVersion: 2
-      Hash: 0927e41b46e1bd11671f9b5adda4b832
+      Hash: c7fb179250ce5a9fbc3c7029a1925ae8
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
     className: PhotonRigidbodyView
@@ -1933,6 +1949,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Launcher
+  - hash:
+      serializedVersion: 2
+      Hash: 0d08e74acf7ae641369a28a701ce94a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuUI
   - hash:
       serializedVersion: 2
       Hash: 426e5bd616852254b77531cd1a8e29b6
@@ -2139,6 +2161,12 @@ ScriptsOnlyBuild:
     className: SlotRacerSplashScreen
   - hash:
       serializedVersion: 2
+      Hash: 26eebdf0f41d17ecabad71177f3cd94b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GrabItems
+  - hash:
+      serializedVersion: 2
       Hash: bd543bad7f9f6262f10595aadb130d22
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -2211,10 +2239,10 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
-      Hash: 04cab81eeeaae6b52511ca29fc924237
+      Hash: 3d5b56a4570848687d3b127bffde948d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MenuUI
+    className: CubesLogic
   platform: 19
   scenePathNames:
   - Assets/Launcher/Launcher.unity

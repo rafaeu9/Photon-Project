@@ -37,6 +37,8 @@ namespace Photon.Pun
         [HideInInspector]
         public float m_TeleportIfDistanceGreaterThan = 3.0f;
 
+        public bool SyncronyseGravaty = true;
+
         public void Awake()
         {
             this.m_Body = GetComponent<Rigidbody>();
@@ -61,6 +63,10 @@ namespace Photon.Pun
                 stream.SendNext(this.m_Body.position);
                 stream.SendNext(this.m_Body.rotation);
 
+                if(SyncronyseGravaty)
+                stream.SendNext(this.m_Body.useGravity);
+
+
                 if (this.m_SynchronizeVelocity)
                 {
                     stream.SendNext(this.m_Body.velocity);
@@ -75,6 +81,10 @@ namespace Photon.Pun
             {
                 this.m_NetworkPosition = (Vector3)stream.ReceiveNext();
                 this.m_NetworkRotation = (Quaternion)stream.ReceiveNext();
+
+                if(SyncronyseGravaty)
+                this.m_Body.useGravity = (bool)stream.ReceiveNext();
+
 
                 if (this.m_TeleportEnabled)
                 {

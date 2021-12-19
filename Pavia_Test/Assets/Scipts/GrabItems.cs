@@ -1,4 +1,5 @@
 using Photon.Pun;
+using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -55,7 +56,7 @@ public class GrabItems : MonoBehaviour
     {
         if (photonview.IsMine)
         {
-            ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2,0));            
+            ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
 
             switch (grabedState)
             {
@@ -63,29 +64,51 @@ public class GrabItems : MonoBehaviour
 
                     GrabbedItem.transform.position = Vector3.Lerp(GrabbedItem.transform.position, transform.position, AttractingSpeed);
 
-                    if(Vector3.Distance(transform.position, GrabbedItem.transform.position) <= GrabingAdjustDistance)
+                    if (Vector3.Distance(transform.position, GrabbedItem.transform.position) <= GrabingAdjustDistance)
                     {
                         GrabbedItem.transform.parent = transform;
-                                                    
+
                         grabedState = GrabedState.Connected;
                     }
 
                     break;
+
                 case GrabedState.Connected:
 
+
+
                     GrabbedItem.transform.position = Vector3.Lerp(GrabbedItem.transform.position, transform.position, AttractingSpeed);
+
+
 
                     if (Vector3.Distance(transform.position, GrabbedItem.transform.position) <= GrabingAdjustDistance)
                     {
                         GrabbedItem.transform.localPosition = Vector3.zero;
                     }
 
-                    if (Mouse.current.rightButton.wasPressedThisFrame)
+
+
+                    if (photonview.IsMine && Mouse.current.rightButton.wasPressedThisFrame)
                     {
                         GrabbedItem.transform.parent = null;
+
                         GrabbedItem.GetComponent<Rigidbody>().useGravity = true;
-                        GrabbedItem = null;
+
                         grabedState = GrabedState.Null;
+
+                        GrabbedItem.GetComponent<CubesLogic>().cubestate = Cubestate.grounded;
+
+                        GrabbedItem = null;
+                    }
+                    else if (grabedState == GrabedState.Null)
+                    {
+                        GrabbedItem.transform.parent = null;
+
+                        GrabbedItem.GetComponent<Rigidbody>().useGravity = true;
+
+                        GrabbedItem.GetComponent<CubesLogic>().cubestate = Cubestate.grounded;
+
+                        GrabbedItem = null;
                     }
 
                     break;
@@ -102,24 +125,57 @@ public class GrabItems : MonoBehaviour
                         {
                             UI.SetActive(true);
 
-                            if (Mouse.current.rightButton.wasPressedThisFrame)
+                            if (photonview.IsMine && Mouse.current.rightButton.wasPressedThisFrame)
                             {
-                                grabedState = GrabedState.Attracting;
-
-                                GrabbedItem = hit.transform.gameObject;
-
-                                GrabbedItem.GetComponent<Rigidbody>().useGravity = false;
+                                GrabItem();
                             }
                         }
                     }
                     else
-                    UI.SetActive(false);
+                        UI.SetActive(false);
 
                     break;
-                default:       
+                default:
                     break;
- 
+
             }
         }
     }
+
+    [PunRPC]
+    void GrabItem()
+    {
+        grabedState = GrabedState.Attracting;
+
+        GrabbedItem = hit.transform.gameObject;
+
+        GrabbedItem.GetComponent<PhotonView>().TransferOwnership(photonview.Controller);
+
+        GrabbedItem.GetComponent<Rigidbody>().useGravity = false;
+
+        GrabbedItem.GetComponent<CubesLogic>().cubestate = Cubestate.Grabed;
+    }
+
+    #region IPunObservable implementation
+
+
+    //public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    //{
+    //    if (stream.IsWriting)
+    //    {
+            
+    //        // We own this player: send the others our data
+    //        stream.SendNext(GrabbedItem);
+    //        stream.SendNext(grabedState);
+    //    }
+    //    else
+    //    {
+    //        // Network player, receive data
+    //        this.GrabbedItem = (GameObject)stream.ReceiveNext();
+    //        this.grabedState = (GrabedState)stream.ReceiveNext();
+    //    }
+    //}
+
+
+    #endregion
 }
