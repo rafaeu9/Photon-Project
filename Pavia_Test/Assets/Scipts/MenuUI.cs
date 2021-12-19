@@ -8,6 +8,7 @@ public class MenuUI : MonoBehaviour
 
     public GameObject Menu;
     public GameObject PlayerFollowCamera;
+    public GameObject InGame;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class MenuUI : MonoBehaviour
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             Menu.SetActive(!Menu.activeSelf);
+            InGame.SetActive(!InGame.activeSelf);
             PlayerFollowCamera.SetActive(!Menu.activeSelf);
 
             if (Menu.activeSelf)
