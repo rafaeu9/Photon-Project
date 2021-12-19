@@ -18,6 +18,9 @@ public class GrabItems : MonoBehaviour
     public float AttractingSpeed = 0.5f;    
     public float GrabingAdjustDistance = 0.02f;
 
+    [Space]
+
+    public float LauncingForce = 0;
 
     [SerializeField]
     private Camera camera;
@@ -109,6 +112,21 @@ public class GrabItems : MonoBehaviour
                         GrabbedItem = null;
                     }
 
+                    if (Mouse.current.leftButton.wasPressedThisFrame)
+                    {
+                        GrabbedItem.transform.parent = null;
+
+                        GrabbedItem.GetComponent<Rigidbody>().useGravity = true;
+
+                        grabedState = GrabedState.Null;
+
+                        GrabbedItem.GetComponent<CubesLogic>().cubestate = Cubestate.Lanched;
+
+                        GrabbedItem.GetComponent<Rigidbody>().AddForce(ray.direction * LauncingForce, ForceMode.Acceleration);
+
+                        GrabbedItem = null;
+                    }
+
                     break;
 
                 case GrabedState.Null:
@@ -134,6 +152,8 @@ public class GrabItems : MonoBehaviour
 
                                 //Change Cube State
                                 GrabbedItem.GetComponent<CubesLogic>().cubestate = Cubestate.Grabed;
+
+                                UI.SetActive(false);
                             }
                         }
                     }

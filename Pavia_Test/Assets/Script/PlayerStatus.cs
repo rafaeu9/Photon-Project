@@ -17,6 +17,9 @@ public class PlayerStatus : MonoBehaviourPunCallbacks, IPunObservable
     // Start is called before the first frame update
     void Start()
     {
+        if (photonView.IsMine)
+            slider = GameObject.Find("Canvas").transform.Find("InGame").Find("Health").GetComponent<Slider>();
+ 
         slider.maxValue = MaxHelth;
         CurrentHealth = MaxHelth;
     }
@@ -25,6 +28,19 @@ public class PlayerStatus : MonoBehaviourPunCallbacks, IPunObservable
     void Update()
     {
         slider.value = CurrentHealth;
+
+        
+
+        if(CurrentHealth <= 0)
+        {
+            transform.position = Vector3.zero;
+            CurrentHealth = MaxHelth;
+        }
+    }
+
+    public void Damage()
+    {
+        CurrentHealth -= 10;
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -44,4 +60,6 @@ public class PlayerStatus : MonoBehaviourPunCallbacks, IPunObservable
 
         }
     }    
+
+    
 }

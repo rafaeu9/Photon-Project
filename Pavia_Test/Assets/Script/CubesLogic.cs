@@ -60,6 +60,15 @@ public class CubesLogic : MonoBehaviourPunCallbacks, IPunObservable
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(cubestate == Cubestate.Lanched && collision.transform.tag == "Player")
+        {
+            collision.gameObject.GetComponent<PlayerStatus>().Damage();
+            cubestate = Cubestate.grounded;
+        }
+    }
+
     #region IPunObservable implementation
 
 

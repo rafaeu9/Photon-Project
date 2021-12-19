@@ -147,63 +147,63 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2478}
     - Class: 114
-      Script: {instanceID: 2732}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 2972}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 3174}
+      Script: {instanceID: 2974}
     - Class: 114
-      Script: {instanceID: 3190}
+      Script: {instanceID: 3176}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3192}
     - Class: 114
-      Script: {instanceID: 3398}
+      Script: {instanceID: 3388}
     - Class: 114
-      Script: {instanceID: 3522}
+      Script: {instanceID: 3400}
     - Class: 114
-      Script: {instanceID: 3556}
+      Script: {instanceID: 3524}
     - Class: 114
-      Script: {instanceID: 3824}
+      Script: {instanceID: 3558}
     - Class: 114
-      Script: {instanceID: 3866}
+      Script: {instanceID: 3826}
     - Class: 114
-      Script: {instanceID: 4124}
+      Script: {instanceID: 3868}
     - Class: 114
-      Script: {instanceID: 4360}
+      Script: {instanceID: 4126}
     - Class: 114
-      Script: {instanceID: 4366}
+      Script: {instanceID: 4362}
     - Class: 114
-      Script: {instanceID: 4518}
+      Script: {instanceID: 4368}
     - Class: 114
-      Script: {instanceID: 4524}
+      Script: {instanceID: 4520}
     - Class: 114
-      Script: {instanceID: 4756}
+      Script: {instanceID: 4526}
     - Class: 114
-      Script: {instanceID: 4780}
+      Script: {instanceID: 4758}
     - Class: 114
-      Script: {instanceID: 4818}
+      Script: {instanceID: 4782}
     - Class: 114
-      Script: {instanceID: 4956}
+      Script: {instanceID: 4820}
     - Class: 114
-      Script: {instanceID: 5206}
+      Script: {instanceID: 4958}
     - Class: 114
-      Script: {instanceID: 5330}
+      Script: {instanceID: 5208}
     - Class: 114
       Script: {instanceID: 5332}
     - Class: 114
-      Script: {instanceID: 5520}
+      Script: {instanceID: 5334}
     - Class: 114
-      Script: {instanceID: 5676}
+      Script: {instanceID: 5522}
     - Class: 114
-      Script: {instanceID: 5784}
+      Script: {instanceID: 5678}
     - Class: 114
-      Script: {instanceID: 5928}
+      Script: {instanceID: 5786}
     - Class: 114
-      Script: {instanceID: 29780}
+      Script: {instanceID: 5930}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -296,59 +296,59 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2192}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2732}
+      Script: {instanceID: 2690}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 2836}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2838}
     - Class: 114
-      Script: {instanceID: 2972}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 2974}
     - Class: 114
-      Script: {instanceID: 3174}
+      Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3310}
+      Script: {instanceID: 3176}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3312}
     - Class: 114
-      Script: {instanceID: 3398}
+      Script: {instanceID: 3388}
     - Class: 114
-      Script: {instanceID: 3522}
+      Script: {instanceID: 3400}
     - Class: 114
-      Script: {instanceID: 3556}
+      Script: {instanceID: 3524}
     - Class: 114
-      Script: {instanceID: 3726}
+      Script: {instanceID: 3558}
     - Class: 114
-      Script: {instanceID: 3866}
+      Script: {instanceID: 3728}
     - Class: 114
-      Script: {instanceID: 4076}
+      Script: {instanceID: 3868}
     - Class: 114
-      Script: {instanceID: 4334}
+      Script: {instanceID: 4078}
     - Class: 114
-      Script: {instanceID: 4360}
+      Script: {instanceID: 4336}
     - Class: 114
-      Script: {instanceID: 4366}
+      Script: {instanceID: 4362}
     - Class: 114
-      Script: {instanceID: 4780}
+      Script: {instanceID: 4368}
     - Class: 114
-      Script: {instanceID: 4818}
+      Script: {instanceID: 4782}
     - Class: 114
-      Script: {instanceID: 5222}
+      Script: {instanceID: 4820}
     - Class: 114
-      Script: {instanceID: 5330}
+      Script: {instanceID: 5224}
     - Class: 114
-      Script: {instanceID: 5576}
+      Script: {instanceID: 5332}
     - Class: 114
-      Script: {instanceID: 5676}
+      Script: {instanceID: 5578}
     - Class: 114
-      Script: {instanceID: 5784}
+      Script: {instanceID: 5678}
     - Class: 114
-      Script: {instanceID: 29780}
+      Script: {instanceID: 5786}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -866,6 +866,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Chat.Demo
     className: NamePickGui
+  - hash:
+      serializedVersion: 2
+      Hash: 3391672dcd4806162739054ce37ed616
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerStatus
   - hash:
       serializedVersion: 2
       Hash: 62824bb9557c7e987502f2fbd2a26819
@@ -2170,7 +2176,7 @@ ScriptsOnlyBuild:
     className: SlotRacerSplashScreen
   - hash:
       serializedVersion: 2
-      Hash: 26eebdf0f41d17ecabad71177f3cd94b
+      Hash: b0063acb6c9436ff810c2b938748174d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GrabItems
@@ -2246,12 +2252,6 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
-  - hash:
-      serializedVersion: 2
-      Hash: 3391672dcd4806162739054ce37ed616
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerStatus
   platform: 19
   scenePathNames:
   - Assets/Launcher/Launcher.unity

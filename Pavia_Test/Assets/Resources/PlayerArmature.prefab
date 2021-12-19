@@ -44,8 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GrabbingDistance: 5
-  AttractingSpeed: 2
-  GrabingAdjustDistance: 0.1
+  AttractingSpeed: 5
+  GrabingAdjustDistance: 0.4
+  LauncingForce: 1000
   camera: {fileID: 0}
   UI: {fileID: 0}
   GrabbedItem: {fileID: 0}
