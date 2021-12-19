@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - MenuUI
     - MobileDisableAutoSwitchControls
     - PlayerNameInputField
+    - PlayerStatus
     - PlayerUIRoate
     - StarterAssets.StarterAssetsInputs
     - StarterAssets.ThirdPersonController
@@ -33,10 +34,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PhotonRigidbodyViewEditor
-    - Photon.Pun.PhotonTransformViewEditor
-    - Photon.Pun.PhotonViewInspector
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -158,53 +155,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2972}
     - Class: 114
-      Script: {instanceID: 3188}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3384}
+      Script: {instanceID: 3190}
     - Class: 114
-      Script: {instanceID: 3396}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3520}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 3554}
+      Script: {instanceID: 3522}
     - Class: 114
-      Script: {instanceID: 3822}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3824}
     - Class: 114
-      Script: {instanceID: 4122}
+      Script: {instanceID: 3866}
     - Class: 114
-      Script: {instanceID: 4358}
+      Script: {instanceID: 4124}
     - Class: 114
-      Script: {instanceID: 4364}
+      Script: {instanceID: 4360}
     - Class: 114
-      Script: {instanceID: 4516}
+      Script: {instanceID: 4366}
     - Class: 114
-      Script: {instanceID: 4522}
+      Script: {instanceID: 4518}
     - Class: 114
-      Script: {instanceID: 4754}
+      Script: {instanceID: 4524}
     - Class: 114
-      Script: {instanceID: 4778}
+      Script: {instanceID: 4756}
     - Class: 114
-      Script: {instanceID: 4816}
+      Script: {instanceID: 4780}
     - Class: 114
-      Script: {instanceID: 4954}
+      Script: {instanceID: 4818}
     - Class: 114
-      Script: {instanceID: 5204}
+      Script: {instanceID: 4956}
     - Class: 114
-      Script: {instanceID: 5328}
+      Script: {instanceID: 5206}
     - Class: 114
       Script: {instanceID: 5330}
     - Class: 114
-      Script: {instanceID: 5518}
+      Script: {instanceID: 5332}
     - Class: 114
-      Script: {instanceID: 5674}
+      Script: {instanceID: 5520}
     - Class: 114
-      Script: {instanceID: 5782}
+      Script: {instanceID: 5676}
     - Class: 114
-      Script: {instanceID: 5926}
+      Script: {instanceID: 5784}
     - Class: 114
-      Script: {instanceID: 19154}
+      Script: {instanceID: 5928}
+    - Class: 114
+      Script: {instanceID: 29780}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -287,6 +286,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1562}
     - Class: 114
+      Script: {instanceID: 1796}
+    - Class: 114
       Script: {instanceID: 1910}
     - Class: 114
       Script: {instanceID: 2002}
@@ -309,43 +310,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3002}
     - Class: 114
-      Script: {instanceID: 3308}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3384}
+      Script: {instanceID: 3310}
     - Class: 114
-      Script: {instanceID: 3396}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3520}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 3554}
+      Script: {instanceID: 3522}
     - Class: 114
-      Script: {instanceID: 3724}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3726}
     - Class: 114
-      Script: {instanceID: 4074}
+      Script: {instanceID: 3866}
     - Class: 114
-      Script: {instanceID: 4332}
+      Script: {instanceID: 4076}
     - Class: 114
-      Script: {instanceID: 4358}
+      Script: {instanceID: 4334}
     - Class: 114
-      Script: {instanceID: 4364}
+      Script: {instanceID: 4360}
     - Class: 114
-      Script: {instanceID: 4778}
+      Script: {instanceID: 4366}
     - Class: 114
-      Script: {instanceID: 4816}
+      Script: {instanceID: 4780}
     - Class: 114
-      Script: {instanceID: 5220}
+      Script: {instanceID: 4818}
     - Class: 114
-      Script: {instanceID: 5328}
+      Script: {instanceID: 5222}
     - Class: 114
-      Script: {instanceID: 5574}
+      Script: {instanceID: 5330}
     - Class: 114
-      Script: {instanceID: 5674}
+      Script: {instanceID: 5576}
     - Class: 114
-      Script: {instanceID: 5782}
+      Script: {instanceID: 5676}
     - Class: 114
-      Script: {instanceID: 19154}
+      Script: {instanceID: 5784}
+    - Class: 114
+      Script: {instanceID: 29780}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1037,6 +1040,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.PunBasics
     className: LoaderAnime
+  - hash:
+      serializedVersion: 2
+      Hash: 3d5b56a4570848687d3b127bffde948d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CubesLogic
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -2239,10 +2248,10 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
-      Hash: 3d5b56a4570848687d3b127bffde948d
+      Hash: 3391672dcd4806162739054ce37ed616
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CubesLogic
+    className: PlayerStatus
   platform: 19
   scenePathNames:
   - Assets/Launcher/Launcher.unity
