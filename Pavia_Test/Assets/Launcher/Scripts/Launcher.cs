@@ -71,6 +71,11 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     #region Public Methods
 
+        public void Quit()
+        {
+            Application.Quit();
+        }
+        
         /// <summary>
         /// Start the connection process.
         /// - If already connected, we attempt joining a random room
